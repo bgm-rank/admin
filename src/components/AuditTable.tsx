@@ -79,6 +79,8 @@ export function AuditTable({
       return (
         String(m.mal_id).includes(q) ||
         (m.bgm_id !== null && String(m.bgm_id).includes(q)) ||
+        m.media_type.toLowerCase().includes(q) ||
+        (m.reason?.toLowerCase().includes(q) ?? false) ||
         m.title.toLowerCase().includes(q) ||
         (m.title_ja?.toLowerCase().includes(q) ?? false) ||
         (m.subject?.name?.toLowerCase().includes(q) ?? false) ||
