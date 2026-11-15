@@ -1,0 +1,12 @@
+node_modules/
+dist/
+dist-ssr/
+*.local
+.env
+.env.*
+!.env.example
+*.db
+*.db-wal
+*.db-shm
+*.db.bak
+.DS_Store
